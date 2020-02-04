@@ -13,7 +13,7 @@ public class BoomerTimer{
 
 	public BoomerTimer(){
 		Calendar x = Calendar.getInstance();
-		x.add(Calendar.SECOND, 1);
+		x.add(Calendar.MINUTE, 1);
 		while (true){
 				Calendar time = Calendar.getInstance();
 				int check = time.compareTo(x);
@@ -25,7 +25,7 @@ public class BoomerTimer{
 		Runnable sound1 = (Runnable)Toolkit.getDefaultToolkit().getDesktopProperty("win.sound.default");
 		sound1.run();
 		x = Calendar.getInstance();
-		x.add(Calendar.SECOND, 1);
+		x.add(Calendar.MINUTE, 1);
 	}
 		
 	public static void main(String[] args){
